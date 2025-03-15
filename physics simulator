@@ -1,0 +1,15 @@
+try:
+    mass = float(input("Enter mass of car(kg): "))
+    power = float(input("Enter engine power(W): "))
+    time = float(input("Enter acceleration time(s): "))
+except:
+    print("Input error")
+    quit()
+
+acceleration = power/mass
+print("Acceleration of the car:", acceleration)
+initial_velocity = 0
+velocity = initial_velocity + acceleration*time
+print("Velocity of car from rest:", velocity)
+stopping_distance = velocity**2/acceleration*2
+print("Distance travelled by car:",stopping_distance)
